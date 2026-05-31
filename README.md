@@ -25,8 +25,5 @@ My goal is to tackle these goals separately and then in a final project combine 
 - [ ] UART
 - [ ] I2C
 - [ ] SPI
-- [ ] Timers
-- [ ] Interrupts
-- [ ] DMA
 - [ ] FreeRTOS
 - [ ] Final Project
