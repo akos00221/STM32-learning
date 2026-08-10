@@ -1,0 +1,6 @@
+../Core/Src/MPU6050.c:15:6:Read_Test_Values	1
+../Core/Src/MPU6050.c:25:6:MPU60X0_Reset	1
+../Core/Src/MPU6050.c:30:13:MPU60X0_Sampling_Test	5
+../Core/Src/MPU6050.c:63:5:Perform_Test	5
+../Core/Src/MPU6050.c:111:6:MPU60X0Init	1
+../Core/Src/MPU6050.c:124:6:MPU60X0_Read_FIFO_All	1
