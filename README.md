@@ -8,9 +8,9 @@ My goal is to tackle these goals separately and then in a final project combine 
 
 - Nucleo-F411RE
 - SSD1309 OLED Display
-- BME280 Environmental Sensor
+- ~~BME280 Environmental Sensor~~ (initial development started, hardware failed)
 - GY-521 (MPU6050 IMU)
-- GY-NEO8MV2 GPS Module
+- ~~GY-NEO8MV2 GPS Module~~ (hardware failed, soldering error. substituted with hc-05)
 
 ## Software & Tools
 
@@ -22,8 +22,8 @@ My goal is to tackle these goals separately and then in a final project combine 
 
 - [ ] GPIO
   - [x] LED Blink (Bare Metal)
-- [ ] UART
-- [ ] I2C
+- [x] UART
+- [x] I2C
 - [ ] SPI
 - [ ] FreeRTOS
 - [ ] Final Project
