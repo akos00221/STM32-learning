@@ -2,6 +2,9 @@
 #define SSD1309_H
 
 #include "stm32f4xx_hal.h"
+#define COL_S 128
+#define PAGE_S 8
+#define SCREEN_SIZE (PAGE_S*COL_S)
 
 #define CONTRAST_CTRL 0x81
 typedef enum {
