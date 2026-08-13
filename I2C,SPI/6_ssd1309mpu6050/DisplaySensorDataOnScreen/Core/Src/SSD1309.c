@@ -1,6 +1,10 @@
 #include "SSD1309.h"
 #include "main.h"
 
+/*
+	Configure screen in way so that data can be updated with a smaller array -> only update numbers, the constant string labels (temp, speed, angle etc.) don't have to be overwritten constantly. 
+*/
+
 static void SSD1309UpdateScreenHOR(SPI_HandleTypeDef *hspi, uint8_t screen[SCREEN_SIZE]){
 	HAL_GPIO_WritePIN(pinmap->cs.GPIOx, pinmap->cs.GPIO_Pin, GPIO_PIN_RESET);
 	HAL_Delay(50);
