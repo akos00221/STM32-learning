@@ -1,10 +1,10 @@
 #include "SSD1309.h"
 #include "main.h"
 
-static void SSD1309UpdateScreenHOR(SPI_HandleTypeDef *hspi, uint8_t screen[static 8*128]){
+static void SSD1309UpdateScreenHOR(SPI_HandleTypeDef *hspi, uint8_t screen[SCREEN_SIZE]){
 	HAL_GPIO_WritePIN(pinmap->cs.GPIOx, pinmap->cs.GPIO_Pin, GPIO_PIN_RESET);
 	HAL_Delay(50);
-	HAL_SPI_Transmit_DMA(hspi, screen, 8*128);
+	HAL_SPI_Transmit_DMA(hspi, screen, SCREEN_SIZE);
 	HAL_GPIO_WritePIN(pinmap->cs.GPIOx, pinmap->cs.GPIO_Pin, GPIO_PIN_SET);
 }
 static void SSD1309UpdateScreenVER(SPI_HandleTypeDef *hspi, uint8_t screen[static 8*128]);
